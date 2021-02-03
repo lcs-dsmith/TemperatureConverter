@@ -13,60 +13,47 @@ func celsiusToFahrenheit (Value: Double) -> Double {
     return output
 }
 
-func fahrenheitToCelsius (Value: Double) -> Double {
-    let output = (Value - 32) * 5 / 9
-    return output
-}
 
-func celsiusToKelvin (Value: Double) -> Double {
-    let output = Value + 273.15
-    return output
-}
-
-func kelvinToCelsius (Value: Double) -> Double {
-    let output = Value - 273.15
-    return output
-}
-
-func toBaseUnit(Value: Double, startingUnit: Int) -> Double {
-    <#function body#>
-}
 
 while true {
-    //Input
+    //MARK: Input
     //Get the value to convert
     let valueToConvert = Double.collectInput(withPrompt: "What is your Temperature value you want to convert? ", minimum: nil , maximum: nil)
     
     //Get what temperature system it is in
-    let currentTemperatureSystem = Int.collectInput(withPrompt: """
+    let currentTemperatureSystem = String.collectInput(withPrompt: """
 What is your current temperature system.
-1: Celsius or
-2: Fahrenheit
-3: Kelvin
-""", minimum: 1, maximum: 3)
-    
-    let newTemperatureSystem = Int.collectInput(withPrompt: """
-What temperature system do you want to convert to.
-1: Celsius or
-2: Fahrenheit
-3: Kelvin
-""", minimum: 1, maximum: 3)
-    
-    //Process
-    switch currentTemperatureSystem {
-    case 1:
-        let Answer = fahrenheitToCelsius(Value: valueToConvert)
-        print((Answer), terminator: "")
-        print("degrees Celsius")
-        
-    case 2:
-        let Answer = celsiusToFahrenheit(Value: valueToConvert)
-        print((Answer), terminator: "")
-        print(" degrees Fahrenheit")
-    case 3
+Celsius (C)
+Fahrenheit (F)
+Kelvin (K)
 
-    }
-    //Output
+""", acceptableValues: ["C", "F", "K"])
+    
+    let newTemperatureSystem = String.collectInput(withPrompt: """
+What temperature system do you want to convert to.
+Celsius (C)
+Fahrenheit (F)
+Kelvin (K)
+
+""", acceptableValues: ["C", "F", "K"])
+    
+    
+    
+    //MARK: Process
+//Convert to celsius
+    let celsiusEquivalent = toBaseUnit(Value: valueToConvert, startingUnit: currentTemperatureSystem)
+
+//Convert to desired outcome
+    let output = toDestinationUnit(Value: celsiusEquivalent, destinationUnit: newTemperatureSystem)
+    
+    
+    //MARK: Output
+    print("The Temperature is \(output)° \(newTemperatureSystem)")
+    
+    
+    
+    
+    //MARK: LOOP
     let continueYesOrNO = String.collectInput(withPrompt: "Would you like to calculate again yes or no? ", acceptableValues: ["yes", "no"])
     if continueYesOrNO == "no" {
         exit(0)
