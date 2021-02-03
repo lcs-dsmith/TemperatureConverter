@@ -18,6 +18,19 @@ func fahrenheitToCelsius (Value: Double) -> Double {
     return output
 }
 
+func celsiusToKelvin (Value: Double) -> Double {
+    let output = Value + 273.15
+    return output
+}
+
+func kelvinToCelsius (Value: Double) -> Double {
+    let output = Value - 273.15
+    return output
+}
+
+func toBaseUnit(Value: Double, startingUnit: Int) -> Double {
+    <#function body#>
+}
 
 while true {
     //Input
@@ -41,21 +54,22 @@ What temperature system do you want to convert to.
     
     //Process
     switch currentTemperatureSystem {
-    case:
+    case 1:
         let Answer = fahrenheitToCelsius(Value: valueToConvert)
         print((Answer), terminator: "")
         print("degrees Celsius")
         
-    } else {
-        
+    case 2:
         let Answer = celsiusToFahrenheit(Value: valueToConvert)
         print((Answer), terminator: "")
         print(" degrees Fahrenheit")
+    case 3
+
     }
     //Output
     let continueYesOrNO = String.collectInput(withPrompt: "Would you like to calculate again yes or no? ", acceptableValues: ["yes", "no"])
     if continueYesOrNO == "no" {
-        break
+        exit(0)
     } else {
         continue
     }

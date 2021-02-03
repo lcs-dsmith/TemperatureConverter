@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A9E357025CA163C0075718E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E356F25CA163C0075718E /* main.swift */; };
 		4A9E357825CA169A0075718E /* Extrentions copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E357725CA169A0075718E /* Extrentions copy.swift */; };
+		4A9E357B25CB0C360075718E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E357A25CB0C360075718E /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		4A9E356C25CA163C0075718E /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9E356F25CA163C0075718E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4A9E357725CA169A0075718E /* Extrentions copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extrentions copy.swift"; sourceTree = "<group>"; };
+		4A9E357A25CB0C360075718E /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,8 @@
 		4A9E356325CA163C0075718E = {
 			isa = PBXGroup;
 			children = (
+				4A9E357A25CB0C360075718E /* Functions.swift */,
+				4A9E357725CA169A0075718E /* Extrentions copy.swift */,
 				4A9E356E25CA163C0075718E /* TemperatureConverter */,
 				4A9E356D25CA163C0075718E /* Products */,
 			);
@@ -60,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				4A9E356F25CA163C0075718E /* main.swift */,
-				4A9E357725CA169A0075718E /* Extrentions copy.swift */,
 			);
 			path = TemperatureConverter;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			files = (
 				4A9E357025CA163C0075718E /* main.swift in Sources */,
 				4A9E357825CA169A0075718E /* Extrentions copy.swift in Sources */,
+				4A9E357B25CB0C360075718E /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
