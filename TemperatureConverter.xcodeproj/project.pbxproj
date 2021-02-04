@@ -69,7 +69,7 @@
 				4A9E357A25CB0C360075718E /* Functions.swift */,
 				4A9E357725CA169A0075718E /* Extrentions copy.swift */,
 				4A9E356E25CA163C0075718E /* TemperatureConverter */,
-				4A9E358225CB0D340075718E /* Length Converter */,
+				4A9E358225CB0D340075718E /* Area Converter */,
 				4A9E356D25CA163C0075718E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,12 +91,12 @@
 			path = TemperatureConverter;
 			sourceTree = "<group>";
 		};
-		4A9E358225CB0D340075718E /* Length Converter */ = {
+		4A9E358225CB0D340075718E /* Area Converter */ = {
 			isa = PBXGroup;
 			children = (
 				4A9E358325CB0D340075718E /* main.swift */,
 			);
-			path = "Length Converter";
+			path = "Area Converter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
