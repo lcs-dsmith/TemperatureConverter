@@ -15,9 +15,15 @@ struct ContentView: View {
     
     @State private var outputSystem: String = ""
     
-    private var convertedValue: String {
-        return inputValue
+    private var output: String{
+        guard let providedValue = Int(inputValue) else {
+            return "Please provide a valid number"
+        }
+        let meterConversion =  convertToMeters(from: inputSystem, of: Double(providedValue))
+        let targetConversion = convertToTargetSystem(to: outputSystem, of: meterConversion)
+        return "You conversion from \(inputValue) \(inputSystem) to \(outputSystem) is equal to \(targetConversion) \(outputSystem)"
     }
+    
     
     var body: some View {
        
@@ -38,7 +44,7 @@ struct ContentView: View {
                     Text("IN").tag("in")
                 }
                 .pickerStyle(SegmentedPickerStyle())
-                Text("Your starting value is *\(inputSystem)*")
+                Text("Your starting system is *\(inputSystem)*")
                 
                 Picker("Starting value", selection: $outputSystem) {
                     Text("KM").tag("km")
@@ -51,8 +57,9 @@ struct ContentView: View {
                     Text("IN").tag("in")
                 }
                 .pickerStyle(SegmentedPickerStyle())
-                Text("Your target value is *\(outputSystem)*")
+                Text("Your target system is *\(outputSystem)*")
                 
+                Text(output)
             }
         }
         

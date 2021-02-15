@@ -63,9 +63,9 @@ func convertToMeters(from startingMeasurmentType: String, of value: Double) -> D
     return output
 }
 
-func convertToTargetSystem(from startingMeasurmentType: String, of value: Double) -> Double {
+func convertToTargetSystem(to targetMeasurmentType: String, of value: Double) -> Double {
     var output = 0.0
-    switch startingMeasurmentType {
+    switch targetMeasurmentType {
     case "km":
         output = value / 1000
     case "m":
