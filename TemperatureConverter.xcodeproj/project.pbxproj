@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A97F39B25D6EEC9001BFFA1 /* iOS_LengthConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97F39A25D6EEC9001BFFA1 /* iOS_LengthConverterApp.swift */; };
+		4A97F39D25D6EEC9001BFFA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97F39C25D6EEC9001BFFA1 /* ContentView.swift */; };
+		4A97F39F25D6EECD001BFFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A97F39E25D6EECD001BFFA1 /* Assets.xcassets */; };
+		4A97F3A225D6EECD001BFFA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A97F3A125D6EECD001BFFA1 /* Preview Assets.xcassets */; };
+		4A97F3AA25D6EED4001BFFA1 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E357A25CB0C360075718E /* Functions.swift */; };
+		4A97F3AE25D6EEDA001BFFA1 /* Extrentions copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E357725CA169A0075718E /* Extrentions copy.swift */; };
 		4A9E357025CA163C0075718E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E356F25CA163C0075718E /* main.swift */; };
 		4A9E357825CA169A0075718E /* Extrentions copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E357725CA169A0075718E /* Extrentions copy.swift */; };
 		4A9E357B25CB0C360075718E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9E357A25CB0C360075718E /* Functions.swift */; };
@@ -37,6 +43,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A97F39825D6EEC9001BFFA1 /* iOS-LengthConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-LengthConverter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A97F39A25D6EEC9001BFFA1 /* iOS_LengthConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_LengthConverterApp.swift; sourceTree = "<group>"; };
+		4A97F39C25D6EEC9001BFFA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A97F39E25D6EECD001BFFA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A97F3A125D6EECD001BFFA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A97F3A325D6EECD001BFFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A9E356C25CA163C0075718E /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9E356F25CA163C0075718E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4A9E357725CA169A0075718E /* Extrentions copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extrentions copy.swift"; sourceTree = "<group>"; };
@@ -46,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4A97F39525D6EEC9001BFFA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A9E356925CA163C0075718E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,13 +82,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A97F39925D6EEC9001BFFA1 /* iOS-LengthConverter */ = {
+			isa = PBXGroup;
+			children = (
+				4A97F39A25D6EEC9001BFFA1 /* iOS_LengthConverterApp.swift */,
+				4A97F39C25D6EEC9001BFFA1 /* ContentView.swift */,
+				4A97F39E25D6EECD001BFFA1 /* Assets.xcassets */,
+				4A97F3A325D6EECD001BFFA1 /* Info.plist */,
+				4A97F3A025D6EECD001BFFA1 /* Preview Content */,
+			);
+			path = "iOS-LengthConverter";
+			sourceTree = "<group>";
+		};
+		4A97F3A025D6EECD001BFFA1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A97F3A125D6EECD001BFFA1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4A9E356325CA163C0075718E = {
 			isa = PBXGroup;
 			children = (
 				4A9E357A25CB0C360075718E /* Functions.swift */,
 				4A9E357725CA169A0075718E /* Extrentions copy.swift */,
 				4A9E356E25CA163C0075718E /* TemperatureConverter */,
-				4A9E358225CB0D340075718E /* Area Converter */,
+				4A9E358225CB0D340075718E /* Length converter */,
+				4A97F39925D6EEC9001BFFA1 /* iOS-LengthConverter */,
 				4A9E356D25CA163C0075718E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +119,7 @@
 			children = (
 				4A9E356C25CA163C0075718E /* TemperatureConverter */,
 				4A9E358125CB0D340075718E /* Length Converter */,
+				4A97F39825D6EEC9001BFFA1 /* iOS-LengthConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,17 +132,34 @@
 			path = TemperatureConverter;
 			sourceTree = "<group>";
 		};
-		4A9E358225CB0D340075718E /* Area Converter */ = {
+		4A9E358225CB0D340075718E /* Length converter */ = {
 			isa = PBXGroup;
 			children = (
 				4A9E358325CB0D340075718E /* main.swift */,
 			);
-			path = "Area Converter";
+			path = "Length converter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4A97F39725D6EEC9001BFFA1 /* iOS-LengthConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A97F3A625D6EECD001BFFA1 /* Build configuration list for PBXNativeTarget "iOS-LengthConverter" */;
+			buildPhases = (
+				4A97F39425D6EEC9001BFFA1 /* Sources */,
+				4A97F39525D6EEC9001BFFA1 /* Frameworks */,
+				4A97F39625D6EEC9001BFFA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-LengthConverter";
+			productName = "iOS-LengthConverter";
+			productReference = 4A97F39825D6EEC9001BFFA1 /* iOS-LengthConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4A9E356B25CA163C0075718E /* TemperatureConverter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A9E357325CA163C0075718E /* Build configuration list for PBXNativeTarget "TemperatureConverter" */;
@@ -145,6 +203,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					4A97F39725D6EEC9001BFFA1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					4A9E356B25CA163C0075718E = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -168,11 +229,35 @@
 			targets = (
 				4A9E356B25CA163C0075718E /* TemperatureConverter */,
 				4A9E358025CB0D340075718E /* Length Converter */,
+				4A97F39725D6EEC9001BFFA1 /* iOS-LengthConverter */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		4A97F39625D6EEC9001BFFA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A97F3A225D6EECD001BFFA1 /* Preview Assets.xcassets in Resources */,
+				4A97F39F25D6EECD001BFFA1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		4A97F39425D6EEC9001BFFA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A97F39D25D6EEC9001BFFA1 /* ContentView.swift in Sources */,
+				4A97F39B25D6EEC9001BFFA1 /* iOS_LengthConverterApp.swift in Sources */,
+				4A97F3AE25D6EEDA001BFFA1 /* Extrentions copy.swift in Sources */,
+				4A97F3AA25D6EED4001BFFA1 /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A9E356825CA163C0075718E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +281,53 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4A97F3A425D6EECD001BFFA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-LengthConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = NC7ZN86S5C;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS-LengthConverter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.dsmith.iOS-LengthConverter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A97F3A525D6EECD001BFFA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-LengthConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = NC7ZN86S5C;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS-LengthConverter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.dsmith.iOS-LengthConverter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		4A9E357125CA163C0075718E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -358,6 +490,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A97F3A625D6EECD001BFFA1 /* Build configuration list for PBXNativeTarget "iOS-LengthConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A97F3A425D6EECD001BFFA1 /* Debug */,
+				4A97F3A525D6EECD001BFFA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4A9E356725CA163C0075718E /* Build configuration list for PBXProject "TemperatureConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

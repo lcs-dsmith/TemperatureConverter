@@ -14,14 +14,14 @@ import Foundation
 while true {
     print("""
     This program works with the following values:
-milimetres (mm)
-centimetres (cm)
-metres (m)
-kilometres (km)
-inches (in)
-feet (ft)
-yards (yrd)
-miles (mi)
+    milimetres (mm)
+    centimetres (cm)
+    metres (m)
+    kilometres (km)
+    inches (in)
+    feet (ft)
+    yards (yrd)
+    miles (mi)
     """)
     let startingSystem = String.collectInput(withPrompt: "What is your starting system? ", acceptableValues: ["mm", "cm", "m", "km", "in", "ft", "yrd", "mi"])
     
