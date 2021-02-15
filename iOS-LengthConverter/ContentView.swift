@@ -30,8 +30,7 @@ struct ContentView: View {
         VStack {
             Form{
                 
-                TextField("Enter your value", text: $inputValue)
-                    .keyboardType(.numberPad)
+                Text("Select your starting system")
                 
                 Picker("Starting value", selection: $inputSystem) {
                     Text("KM").tag("km")
@@ -46,6 +45,8 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 Text("Your starting system is *\(inputSystem)*")
                 
+                Text("Select your target system")
+                
                 Picker("Starting value", selection: $outputSystem) {
                     Text("KM").tag("km")
                     Text("M").tag("k")
@@ -58,6 +59,9 @@ struct ContentView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 Text("Your target system is *\(outputSystem)*")
+                
+                TextField("Enter your value", text: $inputValue)
+                    .keyboardType(.numberPad)
                 
                 Text(output)
             }
